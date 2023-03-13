@@ -1,4 +1,12 @@
+@import "./abstracts/functions.scss"; 
+@import "./abstracts/varibales.scss";
+
 * {
 
     background-color: black;
+}
+
+h1 {
+
+    color: green;
 }
