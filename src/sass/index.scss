@@ -11,6 +11,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    padding: 10px;
 
     
 }
@@ -27,6 +28,9 @@
 #header {
 
     border: #FF6060 solid 1px;
+    max-width: 1240px;
+    margin: auto;
+  
 }
 
 #header {
@@ -62,6 +66,7 @@
     align-items: center;
    padding: 30px;
    justify-content: space-between;
+   max-width: 1240px;
 
     ul {
        display: flex;
@@ -90,8 +95,7 @@
 
 .banner {
     padding: 30px;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin: auto;
     max-width: 1240px;
     max-height: 223px;
     min-height: 223px;
@@ -124,6 +128,39 @@
     opacity: 1;
     font-weight: 550;
    
+}
+
+.cardbox {
+
+    background-color: #F6F6F6;
+
+    max-width: 1240px;
+    margin: auto;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: space-between;
+   
+    
+ 
+ 
+
+
+    .card {
+        
+        background-color: #FF6060;
+        height: 340px;
+        width: 340px;
+        border-radius: 10px;
+        gap: 1rem;
+   
+        
+    }
+
+
+
 }
 
 
