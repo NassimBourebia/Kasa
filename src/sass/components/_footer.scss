@@ -1,0 +1,50 @@
+
+footer {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
+  width: 100%;
+  height: 209px;
+
+
+
+    background-color: black;
+
+
+    i {
+        display: inline-block;
+       
+     
+      }
+      
+      .iconfooter {
+     
+        mask: url("../../assets/svg/logo.svg");
+        -webkit-mask: url("../../assets/svg/logo.svg");
+        width: 120px;
+        height: 39.44px;
+        mask-size: 30.44px;
+        -webkit-mask-size: 120px;
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        background-color: white;
+      }
+
+
+p {
+
+    color: white;
+    margin-bottom: -55px;
+}
+
+
+
+
+
+}
+
+

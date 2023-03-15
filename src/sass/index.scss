@@ -1,15 +1,27 @@
+//Font Family Import 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700&display=swap');
+
+//For responsive
 @import "./abstracts/functions.scss"; 
 @import "./abstracts/varibales.scss";
 
-//Font Family Import 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700&display=swap');
+//Layout
+@import "./layout/header.scss";
+
+
+//components
+@import "./components/banner";
+@import "./components/card";
+@import "./components/footer";
+
+
 
 * {
 
    
     font-family: 'Montserrat', sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 0px !important;
     box-sizing: border-box;
     padding: 10px;
 
@@ -17,151 +29,10 @@
 }
 
 
-// #header {
-
-//     background-color:green;
-//     // margin-right: get-vw($desktop-context, 10px);
-//     // margin-right: get-vw($mobile-context, 10px)
-
-// }
-
-#header {
-
-    border: #FF6060 solid 1px;
-    max-width: 1240px;
-    margin: auto;
-  
-}
-
-#header {
-
-    
-
-    h1 {
-
-        color: red;
-    }
-
-    i {
-        display: inline-block;
-     
-      }
-      
-      .icon {
-     
-        mask: url("../assets/svg/logo.svg");
-        -webkit-mask: url("../assets/svg/logo.svg");
-        width: 210.32px;
-        height: 68px;
-        mask-size: 68px;
-        -webkit-mask-size: 210.32px;
-        -webkit-mask-repeat: no-repeat;
-        mask-repeat: no-repeat;
-        background-color: #FF6060;
-      }
-
-  .navbar {
-
-    display: flex;
-    align-items: center;
-   padding: 30px;
-   justify-content: space-between;
-   max-width: 1240px;
-
-    ul {
-       display: flex;
-       gap: 1.5rem;
-       list-style: none;
-       align-items: center;
-
-       a{
-
-        text-decoration: none;
-        color: #FF6060;
-       }
-       a:hover{
-
-        text-decoration:underline;
-
-       }
-       
-    }
 
 
 
-  }
 
-}
-
-.banner {
-    padding: 30px;
-    margin: auto;
-    max-width: 1240px;
-    max-height: 223px;
-    min-height: 223px;
-    border-radius: 25px;
-    background-image: url("../assets/images/home_banner.png");
-    background-position: center center;
-    background-size: cover; 
-    text-align: center;
-    color: #FFFFFF;
-    position: relative;
-    display: grid;
-    place-items: center;
-    
-  
-}
-.banner::before {
-
-    content: "";
-    border-radius: 25px;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-color: rgba(0,0,0,0.25);
-}
-
-.banner h1 {
-    position: relative;
-    opacity: 1;
-    font-weight: 550;
-   
-}
-
-.cardbox {
-
-    background-color: #F6F6F6;
-
-    max-width: 1240px;
-    margin: auto;
-    height: 800px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    padding: 1rem;
-    justify-content: space-between;
-   
-    
- 
- 
-
-
-    .card {
-        
-        background-color: #FF6060;
-        height: 340px;
-        width: 340px;
-        border-radius: 10px;
-        gap: 1rem;
-   
-        
-    }
-
-
-
-}
 
 
 

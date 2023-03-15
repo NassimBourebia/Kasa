@@ -1,0 +1,42 @@
+.cardbox {
+
+    background-color: #F6F6F6;
+
+    max-width: 1240px;
+    margin-left: 6.94%;
+    margin-right: 6.94%;
+    height: 829px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: content;
+    gap: 1rem;
+    padding: 2.5rem !important;
+    justify-content: space-between;
+    border-radius: 25px;
+   
+    
+
+
+    .card {
+        
+        background-color: #FF6060;
+        height: 340px;
+        flex-basis: 30%;
+       flex-wrap: wrap;
+        border-radius: 10px;
+        gap: 1rem;
+   
+        
+    }
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .cardbox {
+       
+      justify-content: center;
+       
+     }}

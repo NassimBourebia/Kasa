@@ -1,0 +1,52 @@
+.banner {
+    padding: 30px;
+    margin-left: 6.94%;
+    margin-right: 6.94%;
+    margin-bottom: 42px;
+    margin-top: 42px;
+    max-width: 1240px;
+    max-height: 223px;
+    min-height: 223px;
+    border-radius: 25px;
+    background-image: url("../../assets/images/home_banner.png");
+    background-position: center center;
+    background-size: cover; 
+    text-align: center;
+    color: #FFFFFF;
+    position: relative;
+    display: grid;
+    place-items: center;
+    
+    h1 {
+          font-size: 48px;
+    }
+    
+
+}
+@media screen and (max-width: 768px) {
+   .banner h1 {
+      font-size: 24px; 
+     
+      
+    }
+
+}
+
+.banner::before {
+
+    content: "";
+    border-radius: 25px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.25);
+}
+
+.banner h1 {
+    position: relative;
+    opacity: 1;
+    font-weight: 550;
+   
+}
