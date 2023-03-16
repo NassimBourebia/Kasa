@@ -1,13 +1,5 @@
-function Card () {
- return (
-  <div className="cardbox">
-   <div className="card"></div>
-   <div className="card"></div>
-   <div className="card"></div>
-   <div className="card"></div>   
-   <div className="card"></div> 
-   <div className="card"></div> 
-  </div>)
+function Card() {
+  return <div className="card"></div>;
 }
 
-export default Card
+export default Card;

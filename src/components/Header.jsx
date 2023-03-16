@@ -1,16 +1,22 @@
-function Header () {
- return (
-  <header id="header">
-    <i className="icon"></i>
+import { NavLink } from "react-router-dom";
 
-    <nav className="navbar"> 
-     <ul>
-      <li><a href="#">Accueil</a></li>
-      <li><a href="#">A Propos</a></li>
-     </ul>
-    </nav>
-  </header>)
+function Header() {
+  return (
+    <header id="header">
+      <i className="icon"></i>
 
+      <nav className="navbar">
+        <ul>
+          <li>
+            <NavLink to="/">Accueil</NavLink>
+          </li>
+          <li>
+            <NavLink to="/about">A Propos</NavLink>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  );
 }
 
 export default Header;
