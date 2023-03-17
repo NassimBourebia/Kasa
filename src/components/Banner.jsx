@@ -1,7 +1,8 @@
-function Banner() {
+function Banner(props) {
+
  return (
- <div className='banner'>
-  <h1>Chez vous, partout et ailleurs</h1>
+ <div className='banner'> 
+  { props.text ? <h1>{props.text}</h1> : null     /* props.text &&  <h1>{props.text}</h1>*/}
  </div>
 );
 }

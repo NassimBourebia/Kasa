@@ -1,11 +1,5 @@
-import Card from "./Card";
-
-function Main() {
-  return (
-    <div className="cardbox">
-      <Card />
-    </div>
-  );
+function Main(props) {
+  return <main className={props.className}>{props.children}</main>;
 }
 
 export default Main;

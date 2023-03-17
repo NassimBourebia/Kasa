@@ -1,20 +1,12 @@
 import Banner from "../components/Banner";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Main from "../components/Main";
 
-function About () {
-
-
-    return (
-        <div>
-            <Header/>
-            <Banner/>
-            <Footer/>
-        </div>
-
-
-
-    )
+function About() {
+  return (
+    <Main className="About">
+      <Banner />
+    </Main>
+  );
 }
 
-export default About ; 
+export default About;

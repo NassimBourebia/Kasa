@@ -1,13 +1,16 @@
+import { Link } from "react-router-dom";
 
-function Card() {
+function Card(props) {
+  const { data } = props;
   return (
-    <div className="cardbox">
-      <div className="card"></div>
-      <div className="card"></div>
-      <div className="card"></div>
-      <div className="card"></div>
-      <div className="card"></div>
-    </div>
+    <li>
+      <figure className="card">
+        <Link to={`/accommodation/${data.id}`}>
+          <img src={data.cover} alt={data.title} />
+          <figcaption>{data.title}</figcaption>
+        </Link>
+      </figure>
+    </li>
   );
 }
 
