@@ -1,10 +1,15 @@
 import Banner from "../components/Banner";
 import Main from "../components/Main";
+import Dropdown from "../components/Dropdown";
+
+
 
 function About() {
-  return (
+
+ return (
     <Main className="About">
-      <Banner />
+      <Banner/>
+      <Dropdown/>
     </Main>
   );
 }
