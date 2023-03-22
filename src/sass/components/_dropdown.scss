@@ -23,11 +23,11 @@
         font-weight: normal;
         position: relative;
 
-    &.collapse p {
+    &.collapse + p {
         display: none;
     }
 
-    &.expand {
+    &.expand + p  {
   display: block;
     }
 

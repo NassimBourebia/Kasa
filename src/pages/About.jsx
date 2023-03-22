@@ -10,7 +10,9 @@ function About() {
  return (
     <Main className="About">
       <Banner/>
-      <Dropdown data={data}/>
+      <div className="boxdescription">  
+          { data.map((item, index) => <Dropdown key={index} data={ item } />) }
+      </div>
     </Main>
   );
 }

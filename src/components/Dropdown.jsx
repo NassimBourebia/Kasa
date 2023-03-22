@@ -1,27 +1,19 @@
 import { useState } from "react";
 
 function Dropdown({ data }) {
-  const [activeItemIndex, setActiveItemIndex] = useState(null);
-
-  const showContent = (index) => {
-    setActiveItemIndex(index === activeItemIndex ? null : index);
-  };
+  const [activeItemIndex, setActiveItemIndex] = useState(false);
 
   return (
-    <div className="boxdescription">
-      {data.map((item, index) => (
-        <div className="dropdown" key={item.id}>
+        <div className="dropdown">
           <h2
-            className={`collapse expand ${index === activeItemIndex ? "active" : ""}`}
-            onClick={() => showContent(index)}
+            className={activeItemIndex ? "expand" : "collapse"}
+            onClick={() => setActiveItemIndex(!activeItemIndex)}
           >
-            {item.title}
+            {data.title}
             <i className="up"></i>
           </h2>
-          {index === activeItemIndex && <p>{item.description}</p>}
+          <p>{data.description}</p>
         </div>
-      ))}
-    </div>
   );
 }
 

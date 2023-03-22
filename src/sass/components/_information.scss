@@ -1,0 +1,146 @@
+.information {
+
+    margin-left: 6.94%;
+    margin-right: 6.94%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+
+
+}
+
+
+.apartment-info {
+
+    border: 2px solid red;
+    display: grid;
+    gap: 1rem;
+    width: max-content;
+    justify-self: start;
+
+
+
+}
+
+.host-profil {
+
+
+    border: 2px solid green;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: max-content;
+    height: max-content;
+
+    justify-self: end;
+
+
+}
+
+.title {
+    color: #ff6060;
+}
+
+.location {
+
+    margin-top: -2%;
+    color: #ff6060;
+
+
+}
+
+
+.badge {
+
+    height: 64px;
+    width: 64px;
+    border-radius: 50px;
+
+}
+
+
+.badge img {
+
+
+
+    height: 64px;
+    width: 64px;
+    border-radius: 50px;
+    align-self: flex-end;
+    justify-self: end;
+    position: relative;
+
+
+}
+
+.tags {
+    color: white;
+    background-color: #ff6060;
+    border-radius: 10px;
+    width: 115px;
+    height: 25px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+
+}
+
+.host h3 {
+
+
+    font-size: 18px;
+    color: #ff6060;
+    width: min-content;
+}
+
+.stars {
+
+    mask: url("../../assets/svg/logo.svg");
+    -webkit-mask: url("../../assets/svg/star.svg");
+    width: 30px;
+    height: 30px;
+    mask-size: 30px;
+    -webkit-mask-size: 30px;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    background-color: #FF6060;
+    left: 1220px;
+    top: 180px;
+    display: inline-block;
+
+}
+
+.stars i {
+
+    font-size: 30px;
+
+}
+.stars-grey  {
+
+    mask: url("../../assets/svg/logo.svg");
+    -webkit-mask: url("../../assets/svg/star.svg");
+    width: 30px;
+    height: 30px;
+    mask-size: 30px;
+    -webkit-mask-size: 30px;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    background: #E3E3E3;
+    left: 1220px;
+    top: 180px;
+    display: inline-block;
+
+
+}
+
+.host-container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
