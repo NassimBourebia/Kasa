@@ -1,10 +1,10 @@
 .boxdescription {
 
 
-   border: solid black 1px;
+
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(1fr);
     grid-column-gap: 0px;
     grid-row-gap: 33px;
     margin-right: 208px;
@@ -15,37 +15,46 @@
     & h2 {
 
         font-size: 24px;
-        background:  #FF6060;
+        background: #FF6060;
+        height: 47px;
         color: white;
         border-radius: 5px;
-        padding: 5px!important;
-        font-weight:normal; 
+        padding: 5px !important;
+        font-weight: normal;
         position: relative;
 
-     & .up {
+    &.collapse p {
+        display: none;
+    }
 
-    position: absolute;
-    left: 96.76%;
-    right: 1.86%;
-    top: 8.74%;
-    bottom: 78.3%;
-    background: #FFFFFF;
-    transform: rotate(90deg);
-    // background-image: url("../../assets/svg/dropdown.svg")
-    mask: url("../../assets/svg/dropdown.svg");
-    -webkit-mask: url("../../assets/svg/dropdown.svg");
-    width: 14.06px;
-    height: 23.86px;
-    mask-size: 30.44px;
-    -webkit-mask-size: 14.06px;
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    background-color: white;
+    &.expand {
+  display: block;
+    }
+
+        & .up {
+
+            position: absolute;
+            left: 96.76%;
+            right: 1.86%;
+            top: 8.74%;
+            bottom: 78.3%;
+            background: #FFFFFF;
+            margin-top: 16px;
+            // background-image: url("../../assets/svg/dropdown.svg")
+            mask: url("../../assets/svg/dropup.svg");
+            -webkit-mask: url("../../assets/svg/dropup.svg");
+            width: 14.06px;
+            height: 23.86px;
+            mask-size: 30.44px;
+            -webkit-mask-size: 14.06px;
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+            background-color: white;
 
 
 
 
-}
+        }
     }
 
     & p {
@@ -55,7 +64,16 @@
         font-size: 24px;
         background: #F6F6F6;
         border-radius: 5px;
+        height: auto;
+
 
     }
 
+
+}
+
+
+.boxdescription:last-child {
+
+    margin-bottom: 46px;
 }

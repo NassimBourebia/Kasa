@@ -1,15 +1,28 @@
-function Dropdown () {
+import { useState } from "react";
 
-    return (
-        <div className="boxdescription">
-            <div className="dropdown">
-                <h2>Fiabilité <i className="up"></i></h2>
-                <p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.</p>
-            </div>
+function Dropdown({ data }) {
+  const [activeItemIndex, setActiveItemIndex] = useState(null);
+
+  const showContent = (index) => {
+    setActiveItemIndex(index === activeItemIndex ? null : index);
+  };
+
+  return (
+    <div className="boxdescription">
+      {data.map((item, index) => (
+        <div className="dropdown" key={item.id}>
+          <h2
+            className={`collapse expand ${index === activeItemIndex ? "active" : ""}`}
+            onClick={() => showContent(index)}
+          >
+            {item.title}
+            <i className="up"></i>
+          </h2>
+          {index === activeItemIndex && <p>{item.description}</p>}
         </div>
-    )
-
-  
+      ))}
+    </div>
+  );
 }
 
-export default Dropdown
+export default Dropdown;
