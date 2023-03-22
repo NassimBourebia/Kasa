@@ -1,7 +1,5 @@
 .boxdescription {
 
-
-
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(1fr);
@@ -9,8 +7,6 @@
     grid-row-gap: 33px;
     margin-right: 208px;
     margin-left: 208px;
-
-
 
     & h2 {
 
@@ -23,13 +19,13 @@
         font-weight: normal;
         position: relative;
 
-    &.collapse + p {
-        display: none;
-    }
+        &.collapse+p {
+            display: none;
+        }
 
-    &.expand + p  {
-  display: block;
-    }
+        &.expand+p {
+            display: block;
+        }
 
         & .up {
 
@@ -50,10 +46,6 @@
             -webkit-mask-repeat: no-repeat;
             mask-repeat: no-repeat;
             background-color: white;
-
-
-
-
         }
     }
 
@@ -65,11 +57,7 @@
         background: #F6F6F6;
         border-radius: 5px;
         height: auto;
-
-
     }
-
-
 }
 
 
