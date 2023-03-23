@@ -65,17 +65,23 @@
     position: relative;
 }
 
+.tags-container {
+
+    display: flex;
+    gap: 1rem;
+
+}
 
 .tags {
     color: white;
     background-color: #ff6060;
     border-radius: 10px;
-    width: 115px;
     height: 25px;
-    display: grid;
-    align-items: center;
     text-align: center;
+    font-size: 14px;
+    padding: 3px 15px !important;
 }
+
 
 
 .host h3 {
@@ -85,7 +91,7 @@
 }
 
 
-.stars {
+.star {
     mask: url("../../assets/svg/star.svg");
     -webkit-mask: url("../../assets/svg/star.svg");
     width: 30px;
@@ -98,11 +104,11 @@
 }
 
 
-.stars-red {
+.star-red {
     background-color: #FF6060;
 }
 
 
-.stars-grey {
+.star-grey {
     background: #E3E3E3;
 }

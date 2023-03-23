@@ -7,12 +7,12 @@ function Information({ data }) {
     <div className="information">
       <div className="apartment-info">
         <h2 className="title">{data.title}</h2>
-        <p className="location">Patris, île-de-France</p>
-        <Tags />
+        <p className="location">{data.location}</p>
+        <Tags data={ data.tags } />
       </div>
       <div className="host-container">
-        <Host />
-        <Rating />
+        <Host data={data.host} />
+        <Rating data={data}/>
       </div>
     </div>
   );

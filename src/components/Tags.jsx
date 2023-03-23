@@ -1,8 +1,12 @@
-function Tags() {
+function Tags({ data }) {
   return (
-    <div className="tags">
-      <p>paris 10</p>
-    </div>
+    <ul className="tags-container">
+      {data.map((tag, index) => (
+        <li className="tags" key={index}>
+          {tag}
+        </li>
+      ))}
+    </ul>
   );
 }
 
