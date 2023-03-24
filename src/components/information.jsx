@@ -1,3 +1,4 @@
+import React from "react";
 import Tags from "./Tags";
 import Host from "./Host";
 import Rating from "./Rating";
