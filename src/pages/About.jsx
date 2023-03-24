@@ -9,7 +9,7 @@ function About() {
       <Banner />
       <div className="boxdescription">
         {data.map((item, index) => (
-          <Dropdown key={index} data={item} />
+          <Dropdown key={index} title={item.title} description={item.description} />
         ))}
       </div>
     </Main>

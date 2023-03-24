@@ -7,7 +7,11 @@
     grid-row-gap: 33px;
     margin-right: 208px;
     margin-left: 208px;
+    margin-bottom: 46px;
 
+}
+
+.dropdown {
     & h2 {
 
         font-size: 24px;
@@ -19,11 +23,11 @@
         font-weight: normal;
         position: relative;
 
-        &.collapse+p {
+        &.collapse+p, &.collapse+ul {
             display: none;
         }
 
-        &.expand+p {
+        &.expand+p, &.expand+ul {
             display: block;
         }
 
@@ -58,10 +62,4 @@
         border-radius: 5px;
         height: auto;
     }
-}
-
-
-.boxdescription:last-child {
-
-    margin-bottom: 46px;
 }

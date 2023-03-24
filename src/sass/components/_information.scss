@@ -52,7 +52,7 @@
     height: 64px;
     width: 64px;
     border-radius: 50px;
-    margin-left: 30%;
+    
 }
 
 
@@ -82,12 +82,17 @@
     padding: 3px 15px !important;
 }
 
+.host {
+
+    align-self: center;
+}
 
 
 .host h3 {
     font-size: 18px;
     color: #ff6060;
     width: min-content;
+    text-align: right;
 }
 
 
