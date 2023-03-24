@@ -11,7 +11,7 @@ function Accommodation() {
 
   return (
     <Main className="Accommodation">
-      <Carousel />
+      <Carousel pictures={logement.pictures} />
       <Information data={logement} />
       <div className="dropdowncontainer">
         <Dropdown title="Description" description={logement.description} />
