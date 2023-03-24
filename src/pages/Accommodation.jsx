@@ -6,15 +6,17 @@ import Carousel from "../components/Carousel";
 import Dropdown from "../components/Dropdown";
 
 function Accommodation() {
-    const params  = useParams();
-    const logement = data.find((item) => item.id === params.id); 
+  const params = useParams();
+  const logement = data.find((item) => item.id === params.id);
 
   return (
     <Main className="Accommodation">
-      <Carousel/>
+      <Carousel />
       <Information data={logement} />
-      <Dropdown title="Description" description={logement.description} />
-      <Dropdown title="Equipement" description={logement.equipments}/>
+      <div className="dropdowncontainer">
+        <Dropdown title="Description" description={logement.description} />
+        <Dropdown title="Equipement" description={logement.equipments} />
+      </div>
     </Main>
   );
 }
