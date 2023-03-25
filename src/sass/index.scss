@@ -7,15 +7,15 @@
 
 //Layout
 @import "./layout/header.scss";
-@import "./layout/_error";
+@import "./pages/error";
 
 
 //components
 @import "./components/banner";
 @import "./components/card";
-@import "./components/footer";
+@import "./layout//footer";
 @import "./components/dropdown";
-@import "./components/information";
+@import "./layout/information";
 @import "./components/carousel"; 
 @import "./pages/accommodation"; 
 

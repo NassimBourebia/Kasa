@@ -8,11 +8,11 @@ function Information({ data }) {
       <div className="apartment-info">
         <h2 className="title">{data.title}</h2>
         <p className="location">{data.location}</p>
-        <Tags data={ data.tags } />
+        <Tags data={data.tags} />
       </div>
       <div className="host-container">
         <Host data={data.host} />
-        <Rating data={data}/>
+        <Rating data={data} />
       </div>
     </div>
   );

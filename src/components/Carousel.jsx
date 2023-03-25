@@ -1,21 +1,35 @@
-// import {useState} from "react"; 
+import { useState } from "react";
 
-function Carousel({pictures}) {
-  
+function Carousel({ pictures }) {
+  const [current, setCurrent] = useState(0);
+  const length = pictures.length;
+
+  const nextSlide = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1);
+  };
+
+  const prevSlide = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1);
+  };
+
+  if (!Array.isArray(pictures) || pictures.length <= 0) {
+    return null;
+  }
+
   return (
     <div className="carousel">
-      <img
-        src="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-4-1.jpg"
-        alt=""
-      />
-      <img
-        src=" https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-3.jpg"
-        alt=""
-      />
-      <i className="arrow left"></i>
-      <i className="arrow right"></i>
-      <p>1/4</p>
-   
+      <i className="arrow left" onClick={prevSlide}></i>
+      <i className="arrow right" onClick={nextSlide}></i>
+      {pictures.map((slide, index) => {
+        return (
+          <div
+            className={index === current ? "carousel active" : ""}
+            key={index}
+          >
+            {index === current && <img src={slide} alt="" />}
+          </div>
+        );
+      })}
     </div>
   );
 }

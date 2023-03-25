@@ -7,9 +7,9 @@
     grid-row-gap: 33px;
     margin-right: 208px;
     margin-left: 208px;
-    margin-bottom: 46px;
-
+    margin-bottom: 128px;
 }
+
 
 .dropdown {
     & h2 {
@@ -23,11 +23,13 @@
         font-weight: normal;
         position: relative;
 
-        &.collapse+p, &.collapse+ul {
+        &.collapse+p,
+        &.collapse+ul {
             display: none;
         }
 
-        &.expand+p, &.expand+ul {
+        &.expand+p,
+        &.expand+ul {
             display: block;
         }
 
@@ -64,7 +66,5 @@
 }
 
 .dropdown li {
-
-
     color: #FF6060;
 }

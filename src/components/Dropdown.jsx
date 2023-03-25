@@ -11,14 +11,18 @@ function Dropdown({ title, description }) {
       >
         {title}
         <i className="up"></i>
-      </h2>{
-      Array.isArray(description)
-        ? <ul>{ description.map((item, index) => <li key={index}>{item}</li>) }</ul>
-        :<p>{description}</p>
-        }
+      </h2>
+      {Array.isArray(description) ? (
+        <ul>
+          {description.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
+      ) : (
+        <p>{description}</p>
+      )}
     </div>
   );
 }
-
 
 export default Dropdown;
