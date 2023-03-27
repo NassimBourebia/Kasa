@@ -41,3 +41,24 @@
     }
 
 }
+
+@media screen and (max-width: 425px) {
+
+  .Accommodation .dropdowncontainer h2 .up {
+
+
+    left: 93%;
+    width: 14px;
+    height: 15px;
+    -webkit-mask-size : 14px; 
+
+  }
+
+  .Accommodation .dropdown h2 .up {
+
+    top: -18.26%;
+  }
+
+
+
+  }

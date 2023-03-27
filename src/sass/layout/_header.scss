@@ -23,6 +23,8 @@
 
   }
 
+    
+
   i {
     display: inline-block;
 
@@ -77,6 +79,14 @@
 
     
 
+  }
+}
+
+
+@media screen and (max-width: 425px) {
+  .navbar {
+    
+    text-transform: uppercase;    
   }
 }
 

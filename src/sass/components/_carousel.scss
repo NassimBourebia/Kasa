@@ -32,7 +32,7 @@
 }
 
 .arrow {
-  
+
   z-index: 10;
   width: 77px;
   height: 77px;
@@ -56,26 +56,35 @@
   }
 }
 
+@media screen and (max-width: 425px) {
 
-// .slider {
-//   position: relative;
-//   height: 100vh;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
+  .carousel {
+    height: 255px;
+    max-width: 1240px;
+  }
 
+  .carousel img {
 
-// .slide {
-//   opacity: 0;
-//   transition-duration: 1s ease;
-// }
+    max-height: 255px !important;
+    border-radius: 10px;
+  }
 
-// .slide.active {
-//   opacity: 1;
-//   transition-duration: 1s;
-//   transform: scale(1.08);
-// }
+  .arrow {
 
+    top: 45% !important;
+    height: 26px !important;
+    width: 15px !important;
+    -webkit-mask-size: 15px !important;
+  }
 
+  .arrow.right {
 
+    right: 2%;
+  }
+
+  .arrow.left {
+
+    left: 2%;
+  }
+
+}

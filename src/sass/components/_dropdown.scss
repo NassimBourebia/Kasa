@@ -68,3 +68,47 @@
 .dropdown li {
     color: #FF6060;
 }
+
+@media screen and (max-width: 425px) {
+    .Accommodation .dropdowncontainer {
+
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 4.3%;
+    }
+
+    .Accommodation .dropdowncontainer h2 {
+        height: 29.93px !important;
+        padding: 6.48px 246.49px 5.45px 11.51px !important;
+
+    }
+
+    .Accommodation .dropdown h2 {
+
+        font-size: 13px;
+    }
+
+    .About .dropdown h2 {
+
+        font-size: 13px;
+        height: 29px;
+        padding: 5.5px 266.49px 5.46px 11.51px !important;
+    }
+
+    .dropdown p {
+
+        padding: 23.03px 6.91px 1.3px 11.51px !important;
+        font-size: 12px !important;
+    }
+
+    .Accommodation .dropdowncontainer ul {
+
+        padding: 23.03px 6.91px 1.3px 11.51px !important;
+
+    }
+    .dropdown li {
+
+        font-size: 12px !important;
+    }
+}

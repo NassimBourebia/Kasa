@@ -43,7 +43,7 @@
 .banner h1 {
     position: relative;
     opacity: 1;
-    font-weight: 550;
+    font-weight: 500;
 
 }
 
@@ -55,3 +55,59 @@
 
     }
 }
+
+@media screen and (max-width: 425px) {
+#header {
+
+    margin-bottom: 0% !important;
+    
+}
+
+
+.banner {
+    min-height: auto;
+    height: 111px;
+    border-radius: 10px;
+    margin-top: 0%;
+    padding: 20px 76px 20px 10px !important;
+    text-align: left;
+    margin-bottom: 25px;
+
+}
+.banner::before {
+    border-radius: 10px;
+}
+
+.cardbox {
+
+    background-color: white !important;
+    margin-bottom: 30px;
+
+}
+
+
+.About>.banner {
+
+    height: 223px;
+
+}
+.About>.boxdescription {
+
+    margin-right: 6.94%;
+    margin-left: 6.94%
+}
+
+.dropdown p {
+
+    font-size: 12px !important;
+    padding: 23.08px 6.91px 52.57px 11.51px !important;
+}
+
+.banner h1 {
+
+    max-width: 231px;
+}
+
+}
+
+
