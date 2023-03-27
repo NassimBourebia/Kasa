@@ -33,6 +33,12 @@
             display: block;
         }
 
+        &.expand .up {
+
+            transform: rotate(-180deg);
+            top: -34.26% !important;
+        }
+
         & .up {
 
             position: absolute;
@@ -60,7 +66,7 @@
         padding: 40px 12px 53px 20px !important;
         font-size: 24px;
         background: #F6F6F6;
-        border-radius: 5px;
+        border-radius: 10px;
         height: auto;
     }
 }
@@ -68,6 +74,34 @@
 .dropdown li {
     color: #FF6060;
 }
+
+.dropdown p {
+
+    border-radius: 0px 0px 10px 10px;
+}
+
+.Accommodation .dropdown p {
+
+    font-size: 18px;
+
+}
+
+.Accommodation .dropdown h2 {
+    font-size: 18px;
+}
+
+.Accommodation .dropdowncontainer ul {
+    border-radius: 0px 0px 10px 10px;
+    font-size: 18px;
+}
+
+.About .boxdescription .dropdown p {
+
+    padding: 36px 27px 19px 18px;
+}
+
+
+
 
 @media screen and (max-width: 425px) {
     .Accommodation .dropdowncontainer {
@@ -96,19 +130,34 @@
         padding: 5.5px 266.49px 5.46px 11.51px !important;
     }
 
+    .About .up {
+
+        width: 16px !important;
+        height: 16px !important;
+        -webkit-mask-size: 16px !important;
+        top: -17% !important;
+        right: 2% !important;
+    }
+
     .dropdown p {
 
         padding: 23.03px 6.91px 1.3px 11.51px !important;
         font-size: 12px !important;
+
     }
 
     .Accommodation .dropdowncontainer ul {
 
         padding: 23.03px 6.91px 1.3px 11.51px !important;
 
+
     }
+
     .dropdown li {
 
         font-size: 12px !important;
+    }
+    .boxdescription {
+        grid-row-gap: 20px
     }
 }

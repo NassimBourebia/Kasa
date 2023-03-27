@@ -3,6 +3,8 @@ import { useState } from "react";
 function Carousel({ pictures }) {
   const [current, setCurrent] = useState(0);
   const length = pictures.length;
+  const total = length;
+  const currentImage = current + 1;
 
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
@@ -25,6 +27,7 @@ function Carousel({ pictures }) {
         { pictures.map((slide, index) => (
           <div className={index === current ? "carousel active" : ""} key={index}>
             {index === current && <img src={slide} alt="" />}
+            <p>{currentImage}/{total}</p>
           </div>
         ))}
       </>

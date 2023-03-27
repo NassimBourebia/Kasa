@@ -23,6 +23,7 @@
 }
 
 
+
 .carousel>img {
   width: 100%;
   height: 100%;
@@ -67,6 +68,11 @@
 
     max-height: 255px !important;
     border-radius: 10px;
+  }
+
+  .carousel p {
+
+    display: none;
   }
 
   .arrow {
