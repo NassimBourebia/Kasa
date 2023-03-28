@@ -81,7 +81,25 @@
 
   }
 }
+@media screen and (max-width: 270px) {
 
+  #header {
+
+   
+    flex-direction: column;
+    align-items: center;
+
+    .navbar {
+      
+      margin-bottom: 8%;
+      
+    }
+    .icon {
+      width: 119px;
+     
+    }
+  }
+}
 
 
 

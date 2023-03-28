@@ -5,8 +5,8 @@
     grid-template-rows: repeat(1fr);
     grid-column-gap: 0px;
     grid-row-gap: 33px;
-    margin-right: 208px;
-    margin-left: 208px;
+    margin-right: 14.44%;
+    margin-left: 14.44%;
     margin-bottom: 128px;
 }
 
@@ -36,7 +36,7 @@
         &.expand .up {
 
             transform: rotate(-180deg);
-            top: -34.26% !important;
+            top: -17.26% !important;
         }
 
         & .up {
@@ -114,7 +114,7 @@
 
     .Accommodation .dropdowncontainer h2 {
         height: 29.93px !important;
-        padding: 6.48px 246.49px 5.45px 11.51px !important;
+        padding: 6.48px 35.49px 5.45px 11.51px !important;
 
     }
 
@@ -122,12 +122,17 @@
 
         font-size: 13px;
     }
+    .About>.boxdescription {
+
+        display: flex;
+        flex-direction: column;
+    }
 
     .About .dropdown h2 {
 
         font-size: 13px;
         height: 29px;
-        padding: 5.5px 266.49px 5.46px 11.51px !important;
+        padding: 5.5px 35.49px 5.46px 11.51px !important;
     }
 
     .About .up {
@@ -149,7 +154,6 @@
     .Accommodation .dropdowncontainer ul {
 
         padding: 23.03px 6.91px 1.3px 11.51px !important;
-
 
     }
 

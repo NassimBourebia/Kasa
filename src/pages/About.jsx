@@ -1,7 +1,7 @@
 import Banner from "../components/Banner";
 import Main from "../components/Main";
 import Dropdown from "../components/Dropdown";
-import data from "../__mocks__/about.json";
+import data from "../data/about.json";
 
 function About() {
   return (
