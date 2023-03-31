@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react"; 
 import Information from "../components/Information";
 import Main from "../components/Main";
-import { useParams, Navigate } from "react-router-dom";
+import { useParams, useNavigate} from "react-router-dom";
 import Carousel from "../components/Carousel";
 import Dropdown from "../components/Dropdown";
 
 function Accommodation() {
   const params = useParams();
   const [ logement, setLogement ] = useState(null);
-
+  const navigate = useNavigate(); 
   useEffect(() => {
     (async () => {
       try {
@@ -17,14 +17,14 @@ function Accommodation() {
         const data = await response.json();
         
         const logement = data.find(item => item.id === params.id);
+        if(!logement) return navigate("/*"); 
         setLogement(logement);
       } catch(error) {
         console.error(error);
       }
     })();
-  }, [ params ]);
+  }, [ params, navigate ]);
 
-  if(!logement) return <Navigate to="/*"/>
 
   return logement && (
     <Main className="Accommodation">
