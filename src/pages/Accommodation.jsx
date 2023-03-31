@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from "react"; 
 import Information from "../components/Information";
 import Main from "../components/Main";
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import Carousel from "../components/Carousel";
 import Dropdown from "../components/Dropdown";
 
@@ -23,6 +23,8 @@ function Accommodation() {
       }
     })();
   }, [ params ]);
+
+  if(!logement) return <Navigate to="/*"/>
 
   return logement && (
     <Main className="Accommodation">
